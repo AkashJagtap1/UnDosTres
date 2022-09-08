@@ -11,7 +11,7 @@ public class BookAppointment extends TestBase {
 
 	public BookAppointment (){
 		PageFactory.initElements(driver,this);
-	System.out.println("hii");
+	
 	}
 
 	@FindBy(xpath="//a[@class='right']")
