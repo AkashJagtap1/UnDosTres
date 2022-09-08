@@ -9,7 +9,7 @@ import com.qa.testBase.TestBase;
 
 public class BookAppointmentTest extends TestBase {
 
-	@Test
+	@Test (priority=3)
 	public void verifyPatientFinding () throws InterruptedException {
 		HomePage home = new HomePage();
 		home.clickOnFindPatient();

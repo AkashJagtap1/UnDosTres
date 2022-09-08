@@ -7,7 +7,7 @@ import com.qa.pageLayer.RegisterPatient;
 import com.qa.testBase.TestBase;
 
 public class RegisterPatientTest extends TestBase  {
-	@Test
+	@Test (priority=1)
 	public void verifyPatientRegistering () throws InterruptedException {
 		HomePage home = new HomePage();
 		home.clickOnRegisterPatient();

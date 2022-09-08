@@ -9,7 +9,7 @@ import com.qa.testBase.TestBase;
 
 public class FindPatientRecordTest extends TestBase{
 
-	@Test
+	@Test (priority=2)
 	public void verifyPatientFinding () throws InterruptedException {
 		HomePage home = new HomePage();
 		home.clickOnFindPatient();

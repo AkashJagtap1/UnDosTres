@@ -6,10 +6,9 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-   
-  	 <class name="com.qa.testLayer.BookAppointmentTest"/>
-      <class name="com.qa.testLayer.RegisterPatientTest"/>
+        <class name="com.qa.testLayer.RegisterPatientTest"/>
       <class name="com.qa.testLayer.FindPatientRecordTest"/>
+      <class name="com.qa.testLayer.BookAppointmentTest"/>
          <class name="com.qa.testLayer.DeleteRecordTest"/>
       
     </classes>

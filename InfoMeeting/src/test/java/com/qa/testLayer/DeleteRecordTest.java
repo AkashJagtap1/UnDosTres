@@ -9,7 +9,7 @@ import com.qa.testBase.TestBase;
 
 public class DeleteRecordTest extends TestBase{
 
-	@Test
+	@Test (priority=4)
 	public void verifyRecordDelete () throws InterruptedException {
 		HomePage home = new HomePage();
 		home.clickOnFindPatient();

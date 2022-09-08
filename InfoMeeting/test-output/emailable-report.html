@@ -9,32 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">185,110</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">292,818</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.testLayer.RegisterPatientTest</td><td><a href="#m0">verifyPatientRegistering</a></td><td rowspan="1">1662625996521</td><td rowspan="1">32007</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.testLayer.DeleteRecordTest</td><td><a href="#m1">verifyRecordDelete</a></td><td rowspan="1">1662626112063</td><td rowspan="1">37552</td></tr><tr class="passedodd"><td rowspan="1">com.qa.testLayer.FindPatientRecordTest</td><td><a href="#m2">verifyPatientFinding</a></td><td rowspan="1">1662626043722</td><td rowspan="1">52883</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.testLayer.BookAppointmentTest</td><td><a href="#m0">verifyPatientFinding</a></td><td rowspan="1">1662633475043</td><td rowspan="1">47539</td></tr><tr class="passedodd"><td rowspan="1">com.qa.testLayer.DeleteRecordTest</td><td><a href="#m1">verifyRecordDelete</a></td><td rowspan="1">1662633538552</td><td rowspan="1">39920</td></tr><tr class="passedeven"><td rowspan="1">com.qa.testLayer.FindPatientRecordTest</td><td><a href="#m2">verifyPatientFinding</a></td><td rowspan="1">1662633414260</td><td rowspan="1">30315</td></tr><tr class="passedodd"><td rowspan="1">com.qa.testLayer.RegisterPatientTest</td><td><a href="#m3">verifyPatientRegistering</a></td><td rowspan="1">1662633331581</td><td rowspan="1">53273</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.qa.testLayer.RegisterPatientTest#verifyPatientRegistering</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/openmrs/appui/header/logout.action?successUrl=openmrs&quot;&gt;...&lt;/a&gt; is not clickable at point (1114, 35). Other element would receive the click: &lt;div class=&quot;toast-item toast-type-success&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=104.0.5112.102)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-EQS1DFQ&apos;, ip: &apos;192.168.47.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\kunal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62678}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7a730d1d1353d8c16958f3911b27c790
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at com.qa.pageLayer.HomePage.logoutBtn(HomePage.java:38)
-	at com.qa.testLayer.RegisterPatientTest.verifyPatientRegistering(RegisterPatientTest.java:51)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.qa.testLayer.BookAppointmentTest#verifyPatientFinding</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">com.qa.testLayer.DeleteRecordTest#verifyRecordDelete</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">com.qa.testLayer.FindPatientRecordTest#verifyPatientFinding</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.testLayer.RegisterPatientTest#verifyPatientRegistering</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
