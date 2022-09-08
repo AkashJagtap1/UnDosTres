@@ -16,7 +16,7 @@ public class ListenerSetup extends TestBase implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		System.out.println("Test execution has been completed");
+		System.out.println("Test case passed");
 		
 	}
 
@@ -38,13 +38,13 @@ public class ListenerSetup extends TestBase implements ITestListener {
 	@Override
 	public void onStart(ITestContext context) {
 	
-		
+		System.out.println("Test execution started");
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
 		
-		
+		System.out.println("Test execution completed");
 	}
 
 }

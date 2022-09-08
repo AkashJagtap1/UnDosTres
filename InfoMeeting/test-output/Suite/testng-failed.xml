@@ -6,13 +6,6 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.qa.testLayer.FindPatientRecordTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verifyPatientFinding"/>
-        </methods>
-      </class> <!-- com.qa.testLayer.FindPatientRecordTest -->
       <class name="com.qa.testLayer.RegisterPatientTest">
         <methods>
           <include name="tearDown"/>
@@ -20,20 +13,6 @@
           <include name="verifyPatientRegistering"/>
         </methods>
       </class> <!-- com.qa.testLayer.RegisterPatientTest -->
-      <class name="com.qa.testLayer.DeleteRecordTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verifyRecordDelete"/>
-        </methods>
-      </class> <!-- com.qa.testLayer.DeleteRecordTest -->
-      <class name="com.qa.testLayer.BookAppointmentTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verifyPatientFinding"/>
-        </methods>
-      </class> <!-- com.qa.testLayer.BookAppointmentTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

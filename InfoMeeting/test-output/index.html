@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.testLayer.RegisterPatientTest" class="method navigator-link" hash-for-method="verifyPatientRegistering">verifyPatientRegistering</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,17 +118,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.testLayer.BookAppointmentTest" class="method navigator-link" hash-for-method="verifyPatientFinding">verifyPatientFinding</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.qa.testLayer.FindPatientRecordTest" class="method navigator-link" hash-for-method="verifyPatientFinding">verifyPatientFinding</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.testLayer.RegisterPatientTest" class="method navigator-link" hash-for-method="verifyPatientRegistering">verifyPatientRegistering</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.qa.testLayer.BookAppointmentTest" class="method navigator-link" hash-for-method="verifyPatientFinding">verifyPatientFinding</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -134,6 +143,43 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.testLayer.RegisterPatientTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPatientRegistering">
+                  </a> <!-- verifyPatientRegistering -->
+                  <span class="method-name">verifyPatientRegistering</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/openmrs/appui/header/logout.action?successUrl=openmrs&quot;&gt;...&lt;/a&gt; is not clickable at point (1114, 35). Other element would receive the click: &lt;div class=&quot;toast-item toast-type-success&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=105.0.5195.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EQS1DFQ&apos;, ip: &apos;192.168.47.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\kunal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57196}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: da0d9ae4e8ed387a5586fbb6d8117a4d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at com.qa.pageLayer.HomePage.logoutBtn(HomePage.java:38)
+	at com.qa.testLayer.RegisterPatientTest.verifyPatientRegistering(RegisterPatientTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -145,21 +191,6 @@
                   <a name="verifyPatientFinding">
                   </a> <!-- verifyPatientFinding -->
                   <span class="method-name">verifyPatientFinding</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.testLayer.RegisterPatientTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPatientRegistering">
-                  </a> <!-- verifyPatientRegistering -->
-                  <span class="method-name">verifyPatientRegistering</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -254,21 +285,21 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyPatientRegistering')
-data.setCell(0, 2, 'com.qa.testLayer.RegisterPatientTest')
-data.setCell(0, 3, 53273);
+data.setCell(0, 1, 'verifyPatientFinding')
+data.setCell(0, 2, 'com.qa.testLayer.BookAppointmentTest')
+data.setCell(0, 3, 49783);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyPatientFinding')
-data.setCell(1, 2, 'com.qa.testLayer.BookAppointmentTest')
-data.setCell(1, 3, 47539);
+data.setCell(1, 1, 'verifyRecordDelete')
+data.setCell(1, 2, 'com.qa.testLayer.DeleteRecordTest')
+data.setCell(1, 3, 43217);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyRecordDelete')
-data.setCell(2, 2, 'com.qa.testLayer.DeleteRecordTest')
-data.setCell(2, 3, 39920);
+data.setCell(2, 1, 'verifyPatientRegistering')
+data.setCell(2, 2, 'com.qa.testLayer.RegisterPatientTest')
+data.setCell(2, 3, 42699);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyPatientFinding')
 data.setCell(3, 2, 'com.qa.testLayer.FindPatientRecordTest')
-data.setCell(3, 3, 30315);
+data.setCell(3, 3, 30337);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -305,57 +336,59 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyPatientRegistering</span>
-                <span class="method-start">44787 ms</span>
+                <span class="method-start">44788 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">98070 ms</span>
+                <span class="method-start">88519 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.testLayer.FindPatientRecordTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">102665 ms</span>
+                <span class="method-start">91771 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyPatientFinding</span>
-                <span class="method-start">127466 ms</span>
+                <span class="method-start">107580 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">157785 ms</span>
+                <span class="method-start">137920 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.testLayer.BookAppointmentTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">160164 ms</span>
+                <span class="method-start">139576 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyPatientFinding</span>
-                <span class="method-start">188249 ms</span>
+                <span class="method-start">155751 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">235791 ms</span>
+                <span class="method-start">205535 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.testLayer.DeleteRecordTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">236617 ms</span>
+                <span class="method-start">206866 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyRecordDelete</span>
-                <span class="method-start">251758 ms</span>
+                <span class="method-start">219304 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">291682 ms</span>
+                <span class="method-start">262523 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
