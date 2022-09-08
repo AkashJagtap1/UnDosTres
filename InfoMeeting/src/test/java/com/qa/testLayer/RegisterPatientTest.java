@@ -49,6 +49,6 @@ public class RegisterPatientTest extends TestBase  {
 		Thread.sleep(5000);
 		
 		home.logoutBtn();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 }

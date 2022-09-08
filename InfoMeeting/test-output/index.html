@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\AKASH JAGTAP\VelocityTraining\Setups\Eclipse\UnDosTres\InfoMeeting\RegressionSuite.xml</span>
+                    <span>D:\AKASH JAGTAP\VelocityTraining\Setups\UndosTres\LocalRepo\UnDosTres\InfoMeeting\RegressionSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -154,8 +154,8 @@
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-EQS1DFQ&apos;, ip: &apos;192.168.47.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\kunal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60103}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d5baf3f0b0bdec1c4eaa44931ec465e1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\kunal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62678}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a730d1d1353d8c16958f3911b27c790
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -178,21 +178,6 @@ Session ID: d5baf3f0b0bdec1c4eaa44931ec465e1
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qa.testLayer.DeleteRecordTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyRecordDelete">
-                  </a> <!-- verifyRecordDelete -->
-                  <span class="method-name">verifyRecordDelete</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.qa.testLayer.FindPatientRecordTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -205,16 +190,34 @@ Session ID: d5baf3f0b0bdec1c4eaa44931ec465e1
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testLayer.DeleteRecordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRecordDelete">
+                  </a> <!-- verifyRecordDelete -->
+                  <span class="method-name">verifyRecordDelete</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\AKASH JAGTAP\VelocityTraining\Setups\Eclipse\UnDosTres\InfoMeeting\RegressionSuite.xml</span>
+            <span class="header-content">D:\AKASH JAGTAP\VelocityTraining\Setups\UndosTres\LocalRepo\UnDosTres\InfoMeeting\RegressionSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.utility.ListenerSetup&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.testLayer.RegisterPatientTest&quot;/&gt;
@@ -263,15 +266,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyPatientFinding')
 data.setCell(0, 2, 'com.qa.testLayer.FindPatientRecordTest')
-data.setCell(0, 3, 48147);
+data.setCell(0, 3, 52883);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyRecordDelete')
 data.setCell(1, 2, 'com.qa.testLayer.DeleteRecordTest')
-data.setCell(1, 3, 37916);
+data.setCell(1, 3, 37552);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyPatientRegistering')
 data.setCell(2, 2, 'com.qa.testLayer.RegisterPatientTest')
-data.setCell(2, 3, 37421);
+data.setCell(2, 3, 32007);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -311,41 +314,41 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyPatientRegistering</span>
-                <span class="method-start">17008 ms</span>
+                <span class="method-start">31416 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">54533 ms</span>
+                <span class="method-start">63990 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.testLayer.FindPatientRecordTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">55576 ms</span>
+                <span class="method-start">65683 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyPatientFinding</span>
-                <span class="method-start">73376 ms</span>
+                <span class="method-start">78617 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">121532 ms</span>
+                <span class="method-start">131503 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.testLayer.DeleteRecordTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">122959 ms</span>
+                <span class="method-start">132171 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyRecordDelete</span>
-                <span class="method-start">139485 ms</span>
+                <span class="method-start">146958 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">177403 ms</span>
+                <span class="method-start">184512 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

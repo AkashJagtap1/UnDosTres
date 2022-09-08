@@ -2,30 +2,30 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-07T20:19:16 IST" name="Suite" finished-at="2022-09-07T20:22:14 IST" duration-ms="178101">
+  <suite started-at="2022-09-08T14:02:45 IST" name="Suite" finished-at="2022-09-08T14:05:50 IST" duration-ms="185110">
     <groups>
     </groups>
-    <test started-at="2022-09-07T20:19:16 IST" name="Test" finished-at="2022-09-07T20:22:14 IST" duration-ms="178101">
+    <test started-at="2022-09-08T14:02:45 IST" name="Test" finished-at="2022-09-08T14:05:50 IST" duration-ms="185110">
       <class name="com.qa.testLayer.FindPatientRecordTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testLayer.FindPatientRecordTest@3c407114]" started-at="2022-09-07T20:20:11 IST" name="setUp" finished-at="2022-09-07T20:20:29 IST" duration-ms="17799" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testLayer.FindPatientRecordTest@35ef1869]" started-at="2022-09-08T14:03:50 IST" name="setUp" finished-at="2022-09-08T14:04:03 IST" duration-ms="12934" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyPatientFinding()[pri:0, instance:com.qa.testLayer.FindPatientRecordTest@3c407114]" started-at="2022-09-07T20:20:29 IST" name="verifyPatientFinding" finished-at="2022-09-07T20:21:17 IST" duration-ms="48147" status="PASS">
+        <test-method signature="verifyPatientFinding()[pri:0, instance:com.qa.testLayer.FindPatientRecordTest@35ef1869]" started-at="2022-09-08T14:04:03 IST" name="verifyPatientFinding" finished-at="2022-09-08T14:04:56 IST" duration-ms="52883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPatientFinding -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testLayer.FindPatientRecordTest@3c407114]" started-at="2022-09-07T20:21:17 IST" name="tearDown" finished-at="2022-09-07T20:21:19 IST" duration-ms="1426" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testLayer.FindPatientRecordTest@35ef1869]" started-at="2022-09-08T14:04:56 IST" name="tearDown" finished-at="2022-09-08T14:04:57 IST" duration-ms="667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testLayer.FindPatientRecordTest -->
       <class name="com.qa.testLayer.RegisterPatientTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testLayer.RegisterPatientTest@13e39c73]" started-at="2022-09-07T20:19:16 IST" name="setUp" finished-at="2022-09-07T20:19:33 IST" duration-ms="17005" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testLayer.RegisterPatientTest@64cd705f]" started-at="2022-09-08T14:02:45 IST" name="setUp" finished-at="2022-09-08T14:03:16 IST" duration-ms="31413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyPatientRegistering()[pri:0, instance:com.qa.testLayer.RegisterPatientTest@13e39c73]" started-at="2022-09-07T20:19:33 IST" name="verifyPatientRegistering" finished-at="2022-09-07T20:20:10 IST" duration-ms="37421" status="FAIL">
+        <test-method signature="verifyPatientRegistering()[pri:0, instance:com.qa.testLayer.RegisterPatientTest@64cd705f]" started-at="2022-09-08T14:03:16 IST" name="verifyPatientRegistering" finished-at="2022-09-08T14:03:48 IST" duration-ms="32007" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <a href="/openmrs/appui/header/logout.action?successUrl=openmrs">...</a> is not clickable at point (1114, 35). Other element would receive the click: <div class="toast-item toast-type-success" style="">...</div>
@@ -33,8 +33,8 @@
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-EQS1DFQ', ip: '192.168.47.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\kunal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60103}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d5baf3f0b0bdec1c4eaa44931ec465e1]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\kunal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62678}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a730d1d1353d8c16958f3911b27c790]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/openmrs/appui/header/logout.action?successUrl=openmrs">...</a> is not clickable at point (1114, 35). Other element would receive the click: <div class="toast-item toast-type-success" style="">...</div>
@@ -42,8 +42,8 @@ Session ID: d5baf3f0b0bdec1c4eaa44931ec465e1]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-EQS1DFQ', ip: '192.168.47.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\kunal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60103}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d5baf3f0b0bdec1c4eaa44931ec465e1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\kunal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62678}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a730d1d1353d8c16958f3911b27c790
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -93,21 +93,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPatientRegistering -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testLayer.RegisterPatientTest@13e39c73]" started-at="2022-09-07T20:20:10 IST" name="tearDown" finished-at="2022-09-07T20:20:11 IST" duration-ms="1006" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testLayer.RegisterPatientTest@64cd705f]" started-at="2022-09-08T14:03:49 IST" name="tearDown" finished-at="2022-09-08T14:03:50 IST" duration-ms="1684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testLayer.RegisterPatientTest -->
       <class name="com.qa.testLayer.DeleteRecordTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testLayer.DeleteRecordTest@35ef1869]" started-at="2022-09-07T20:21:19 IST" name="setUp" finished-at="2022-09-07T20:21:35 IST" duration-ms="16526" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testLayer.DeleteRecordTest@c33b74f]" started-at="2022-09-08T14:04:57 IST" name="setUp" finished-at="2022-09-08T14:05:12 IST" duration-ms="14787" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyRecordDelete()[pri:0, instance:com.qa.testLayer.DeleteRecordTest@35ef1869]" started-at="2022-09-07T20:21:35 IST" name="verifyRecordDelete" finished-at="2022-09-07T20:22:13 IST" duration-ms="37916" status="PASS">
+        <test-method signature="verifyRecordDelete()[pri:0, instance:com.qa.testLayer.DeleteRecordTest@c33b74f]" started-at="2022-09-08T14:05:12 IST" name="verifyRecordDelete" finished-at="2022-09-08T14:05:49 IST" duration-ms="37552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRecordDelete -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testLayer.DeleteRecordTest@35ef1869]" started-at="2022-09-07T20:22:13 IST" name="tearDown" finished-at="2022-09-07T20:22:14 IST" duration-ms="603" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testLayer.DeleteRecordTest@c33b74f]" started-at="2022-09-08T14:05:49 IST" name="tearDown" finished-at="2022-09-08T14:05:50 IST" duration-ms="507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
